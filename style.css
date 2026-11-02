@@ -1,0 +1,720 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#s1{
+    /* background-color:aquamarine; */
+    height: 620px;
+    overflow: hidden;
+    background-image: url(s1\ bg\ image.png);
+    background-size: cover;
+}
+
+#header{
+    padding: 0 120px;
+    /* background-color: blueviolet; */
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    font-size: 140px;
+    -webkit-text-stroke: 3px black;
+    /* background-color: brown; */
+    padding-left: 50px;
+    flex-grow: 1;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar a{
+    width: 150px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#navbar a:hover{
+    background-color: orange;
+}
+
+#floatingSec{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#leftArrow{
+    height: 100px;
+    width: 50px;
+    background-color: rgba(109, 108, 108, 0.5);
+    position: relative;
+    top: 320px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    height: 500px;
+    position: relative;
+    top: 50px;
+    width: 800px;
+    background-color: rgb(0 0 0 / 0.7);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#rightArrow{
+    height: 100px;
+    width: 50px;
+    background-color: rgba(109, 108, 108, 0.5);;
+    position: relative;
+    top: 320px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-chevron-left{
+    font-size: 40px;
+    color: orange;
+}
+.fa-chevron-right{
+    font-size: 40px;
+    color: orange;
+}
+
+#cardHeading{
+    padding: 50px 0px;
+}
+
+p span{
+    color: orange;
+}
+
+#cardHeading{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#cardButton{
+    padding: 10px 30px;
+    width: 300px;
+    background-color: rgb(0 0 0 / 0.5);
+    border: 2px solid white;
+}
+
+#p1, #p2{
+    padding: 23px 0px;
+}
+
+#p1{
+    font-size: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+#s2{
+    background-color: cadetblue;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#s21{
+    background-color: white;
+    width: 50vw;
+    padding-left: 100px;
+    padding-top: 60px;
+    padding-right: 20px;
+}
+
+#s21 h3, #s21 p {
+    color: black;
+}
+
+#s21 h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+}
+#s21 p{
+    text-align: start;
+    font-size: 20px;
+    color: rgb(86, 86, 86);
+}
+
+#divider{
+    color: black;
+    background:linear-gradient(to right, #333 50%,  #ff9800 50%);
+    height: 4px;
+    margin: 10px auto;
+}
+
+#s22{
+    width: 50vw;
+    background-size: cover;
+}
+
+#s22 img{
+    height: 100%;
+    width: 100%;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+#s3{
+    height: 900px;
+    padding: 100px 200px;
+    display: grid;
+    grid-template-rows: 30px 30px 500px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background-image: url(s3bg.png);
+    background-size: cover;
+}
+
+#s3 h4{
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 4;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+#s3 p{
+    grid-row: 2/ span 1;
+    grid-column: 1/ span 4;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+#s3 .first,
+#s3 .second,
+#s3 .third,
+#s3 .fourth {
+    height: 500px;
+    grid-row: 3;
+}
+
+#s3 .first {
+    grid-column: 1;
+    background-color: white;
+}
+
+#s3 .second {
+    grid-column: 2;
+    background-color: white;
+}
+
+#s3 .third {
+    grid-column: 3;
+    background-color: white;
+}
+
+#s3 .fourth {
+    grid-column: 4;
+    background-color: white;
+}
+
+.card .imageContainer{
+    height: 280px;
+    background-position: center;
+    background-size: contain;
+}
+.card .imageContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#content{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content .name{
+    font-size: 20px;
+}
+
+#content .name,
+#content .role{
+    color: black;
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.fa-brands{
+    font-size: 25px;
+    color: orange;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+#s4{
+    background-color: cadetblue;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#s42{
+    background-color: white;
+    width: 50vw;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+#s42 h3, #s42 p {
+    color: black;
+}
+
+#s42 h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+}
+#s42 p{
+    text-align: start;
+    font-size: 20px;
+    color: rgb(86, 86, 86);
+}
+
+#divider{
+    color: black;
+    background:linear-gradient(to right, #333 50%,  #ff9800 50%);
+    height: 4px;
+    margin: 10px auto;
+}
+
+#s41{
+    width: 50vw;
+    background-size: cover;
+}
+
+#s41 img{
+    height: 100%;
+    width: 100%;
+}
+/* ----------------------------------------------------------------------------------------------------------- */
+
+#s5{
+    background-color: gray;
+    height: 900px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-rows: repeat(1, 500px);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    background-image: url(s5\ bg\ image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.cardWO{
+    background-color: aquamarine;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first,
+.second,
+.third,
+.fourth{
+    grid-row: 1;
+}
+
+.first{
+    grid-column: 1/ span 1;
+}
+.second{
+    grid-column: 2/ span 1;
+}
+.third{
+    grid-column: 3/ span 1;
+}
+.fourth{
+    grid-column: 4/ span 1;
+}
+
+.circle{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.s51{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: green;
+    height: 220px;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.s52 {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 30px;
+    line-height: 22px;
+    row-gap: 15px;
+}
+
+.s52 h4,
+.s52 p{
+    color: black;
+}
+
+.s53{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    font-size: 20px;
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+#s6{
+    height: 450px;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px 120px;
+}
+
+#s6 h3{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#s6 #cardsContainer{
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+}
+
+#s6 #cardsContainer .card{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#s6 #cardsContainer .card .ic{
+    font-size: 30px;
+}
+
+#s6 #caption p{
+    color: red;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+
+#s7{
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#s7 h3{
+    color: black;
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+}
+
+#s7 p{
+    color: black;
+}
+
+#s7 #linksContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#s7 #linksContainer .link{
+    height: 30px;
+    width: 150px;
+    color: black;
+}
+#s7 #linksContainer .link a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+#s7 #linksContainer .link a:hover::after{
+    content: "_______";
+}
+#s7 #linksContainer .link a:hover{
+    color: #ff9800;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+#s8{
+    height: 1100px;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    row-gap: 100px;
+}
+
+#s8 .imgContainer{
+    /* background-color: red;
+    border: 2px solid black; */
+}
+
+.imgContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+
+#s9{
+    height: 1000px;
+    background-color: orange;
+}
+
+#s9 h3,
+#s9 p{
+    text-align: center;
+    padding: 10px;
+}
+
+#s9 h3{
+    padding-top: 100px;
+    font-size: 25px;
+}
+
+#s9 p{
+    padding-bottom: 50px;
+}
+
+#s9 #cc{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0px 100px;
+}
+
+#s9 #cc .card{
+    height: auto;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+}
+
+.imgBox{
+    height: 40%;
+    /* background-color: aliceblue; */
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.imgBox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+}
+.imgBox .march{
+    font-size: 40px;
+    padding: 40px 0;
+    font-weight: 300;
+    text-align: start;
+    color: black;
+    font-weight: 100;
+}
+
+.imgBox .h{
+    padding: 20px 0;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.imgBox .line{
+    color: black;
+    text-align: start;
+    padding: 0;
+}
+
+.imgBox button{
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+
+#s10{
+    height: 700px;
+    background-color: brown;
+    padding: 100px;
+    background-image: url(s10\ bg\ image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#s10 #contentBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100px;
+    gap: 20px;
+}
+
+#s10 #contentBox h3{
+    font-size: 30px;
+}
+
+#s10 form{
+    display: grid;
+    grid-template-rows: 70px 150px 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#s10 form *{
+    padding: 15px;
+}
+
+#s10 form #msg{
+    grid-column: 1/ span 2;
+    
+}
+
+#s10 form button{
+    grid-column: 2;
+    color: black;
+    background-color: #ff9800;
+    border: none;
+    justify-self: end;
+    width: 200px;
+}
+
+#s10 form textarea{
+    resize: none;
+}
+/* ------------------------------------------------------------------------------------ */
+
+#s11{
+    background-color: burlywood;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+#s11 #box1{
+    width: 50vw;
+    /* background-color: aquamarine; */
+    background-image: url(s11\ left\ box\ bg\ image.png);
+}
+
+#s11 #box11{
+    height: 160px;
+    width: 500px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-rows: 100px 60px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#s11 #box11 .ic{
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#s11 #box11 #copyright{
+    grid-column: 1/ span 5;
+    text-align: center;
+    place-self: center;
+}
+
+#s11 #box2{
+    width: 50vw;
+    padding: 100px;
+    background-color: #ff9800;
+    line-height: 30px;
+}
